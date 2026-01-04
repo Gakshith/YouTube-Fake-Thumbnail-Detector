@@ -1,0 +1,11 @@
+mlflow==2.2.2
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+notebook
+tqdm
+types-PyYAML
+python-box==6.0.2
+fastapi
