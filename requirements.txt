@@ -7,5 +7,8 @@ seaborn
 notebook
 tqdm
 types-PyYAML
-python-box==6.0.2
+PyYAML
 fastapi
+uvicorn
+
+certifi

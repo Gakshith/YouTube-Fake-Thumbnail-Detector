@@ -1,89 +1,156 @@
 import os
-from box.exceptions import BoxValueError
 import yaml
-from mlProject import logger
 import json
-import joblib
-from ensure import ensure_annotations
-from box import ConfigBox
+import pickle
 from pathlib import Path
+from typing import Any, Dict, List
 from src.mlProject import logger
-from typing import Any
-from .models import ReadYamlModel, CreateDirectoriesModel, SaveJsonModel, LoadJsonModel
 
 
-@ensure_annotations
-def read_yaml(file_path: Path) -> ConfigBox:
+class ConfigBox:
+    """
+    Minimal ConfigBox implementation (no external dependency).
+    Provides dot-notation access to dict keys, recursively.
+    """
+
+    def __init__(self, data: Dict):
+        if not isinstance(data, dict):
+            raise TypeError(f"ConfigBox expects a dict, got {type(data)}")
+
+        for key, value in data.items():
+            if isinstance(value, dict):
+                value = ConfigBox(value)
+            setattr(self, key, value)
+
+    def __getitem__(self, key: str) -> Any:
+        # Optional: still allow dict-style access if you want
+        return getattr(self, key)
+
+    def to_dict(self) -> Dict:
+        # Optional: convert back to plain dict
+        out = {}
+        for key, value in self.__dict__.items():
+            if isinstance(value, ConfigBox):
+                out[key] = value.to_dict()
+            else:
+                out[key] = value
+        return out
+
+    def __repr__(self) -> str:
+        return f"{self.__class__.__name__}({self.__dict__})"
+
+
+def read_yaml(path_to_yaml: Path) -> ConfigBox:
+    """
+    Reads a YAML file and returns a ConfigBox.
+
+    Args:
+        path_to_yaml (Path): Path to YAML file
+
+    Raises:
+        ValueError: If YAML file is empty
+        FileNotFoundError: If YAML path does not exist
+
+    Returns:
+        ConfigBox: Parsed YAML content with dot access
+    """
+    if not path_to_yaml.exists():
+        raise FileNotFoundError(f"YAML file not found: {path_to_yaml}")
+
     try:
-        ReadYamlModel(file_path=file_path)
-        with open(file_path, 'r') as f:
-            content = yaml.safe_load(f)
-            logger.info(f"yaml file -> {file_path} loaded successfully")
-            return ConfigBox(content)
-    except Exception as e:
-        logger.error(f"Error loading YAML file {file_path}: {e}")
-        raise
+        with open(path_to_yaml, "r") as yaml_file:
+            content = yaml.safe_load(yaml_file)
 
-@ensure_annotations
-def create_directories(path_of_directory: List[Path], verbose: bool = True):
-    try:
-        CreateDirectoriesModel(directories=path_of_directory, verbose=verbose)
-        for path in path_of_directory:
-            path.mkdir(parents=True, exist_ok=True)
-            if verbose:
-                logger.info(f"Created directory: {path}")
-    except Exception as e:
-        logger.error(f"Error creating directories: {e}")
-        raise
+        if content is None:
+            raise ValueError(f"YAML file is empty: {path_to_yaml}")
 
-@ensure_annotations
-def save_json(path: Path, data: dict):
-    try:
-        SaveJsonModel(path=path, data=data)
-        with open(path, 'w') as f:
-            json.dump(data, f, indent=4)
-        logger.info(f"json file saved at: {path}")
-    except Exception as e:
-        logger.error(f"Error saving JSON file {path}: {e}")
-        raise
-
-@ensure_annotations
-def load_json(path: Path) -> ConfigBox:
-    try:
-        LoadJsonModel(path=path)
-        with open(path, 'r') as f:
-            content = json.load(f)
-        logger.info(f"json file loaded successfully from: {path}")
+        logger.info(f"YAML file loaded successfully: {path_to_yaml}")
         return ConfigBox(content)
-    except Exception as e:
-        logger.error(f"Error loading JSON file {path}: {e}")
-        raise
 
-@ensure_annotations
+    except Exception as e:
+        logger.exception(e)
+        raise e
+
+
+def create_directories(paths: List[Path], verbose: bool = True):
+    """
+    Create directories if they do not exist.
+
+    Args:
+        paths (List[Path]): List of directory paths
+        verbose (bool): Whether to log directory creation
+    """
+    for path in paths:
+        os.makedirs(path, exist_ok=True)
+        if verbose:
+            logger.info(f"Created directory at: {path}")
+
+
+def save_json(path: Path, data: Dict):
+    """
+    Save dict data to a JSON file.
+
+    Args:
+        path (Path): Path to JSON file
+        data (Dict): Data to save
+    """
+    with open(path, "w") as f:
+        json.dump(data, f, indent=4)
+    logger.info(f"JSON file saved at: {path}")
+
+def load_json(path: Path) -> ConfigBox:
+    """
+    Load JSON data and return ConfigBox.
+
+    Args:
+        path (Path): Path to JSON file
+
+    Returns:
+        ConfigBox: JSON content with dot access
+    """
+    with open(path, "r") as f:
+        content = json.load(f)
+    logger.info(f"JSON file loaded successfully from: {path}")
+    return ConfigBox(content)
+
+
 def save_bin(data: Any, path: Path):
-    try:
-        joblib.dump(value=data, filename=path)
-        logger.info(f"binary file saved at: {path}")
-    except Exception as e:
-        logger.error(f"Error saving binary file {path}: {e}")
-        raise
+    """
+    Save object as binary using pickle.
 
-@ensure_annotations
+    Args:
+        data (Any): Object to save
+        path (Path): Output file path (e.g., model.pkl)
+    """
+    with open(path, "wb") as f:
+        pickle.dump(data, f)
+    logger.info(f"Binary file (pickle) saved at: {path}")
+
+
 def load_bin(path: Path) -> Any:
-    try:
-        data = joblib.load(path)
-        logger.info(f"binary file loaded from: {path}")
-        return data
-    except Exception as e:
-        logger.error(f"Error loading binary file {path}: {e}")
-        raise
+    """
+    Load object from binary using pickle.
 
-@ensure_annotations
+    Args:
+        path (Path): Input file path
+
+    Returns:
+        Any: Loaded object
+    """
+    with open(path, "rb") as f:
+        data = pickle.load(f)
+    logger.info(f"Binary file (pickle) loaded from: {path}")
+    return data
+
 def get_size(path: Path) -> str:
-    try:
-        size_in_kb = round(os.path.getsize(path) / 1024)
-        logger.info(f"Size of {path}: {size_in_kb} KB")
-        return f"~ {size_in_kb} KB"
-    except Exception as e:
-        logger.error(f"Error getting size of {path}: {e}")
-        raise   
+    """
+    Get file size in KB.
+
+    Args:
+        path (Path): File path
+
+    Returns:
+        str: Approx size in KB string
+    """
+    size_kb = round(os.path.getsize(path) / 1024)
+    return f"~ {size_kb} KB"

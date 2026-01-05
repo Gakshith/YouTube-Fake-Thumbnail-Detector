@@ -1,4 +1,4 @@
-import setuptools
+import setuptools # type: ignore
 
 with open("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
@@ -17,9 +17,9 @@ setuptools.setup(
     version=__version__,
     author=AUTHOR_USER_NAME,
     author_email=AUTHOR_EMAIL,
-    description="It analyzes the video title, thumbnail image, and video content (audio and frames) to check whether they match. If the title or thumbnail appears misleading ask the creator to upload the new thumbnail or title..",
+    description="It analyzes the video title,",
     long_description=long_description,
-    long_description_content="text/markdown",
+    long_description_content_type="text/markdown", 
     url=f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}",
     project_urls={
         "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
