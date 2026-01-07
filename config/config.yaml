@@ -5,3 +5,9 @@ data_ingestion:
     source_url: https://github.com/Gakshith/CSC317/raw/refs/heads/main/youtube_dataset.zip
     local_data_file: artifacts/data_ingestion/data.zip
     unzip_dir: artifacts/data_ingestion
+
+data_validation:
+    root_dir: artifacts/data_validation
+    unzip_data: artifacts/data_ingestion/youtube_dataset.csv
+    Data_Validation_Status: artifacts/data_validation/status.txt
+

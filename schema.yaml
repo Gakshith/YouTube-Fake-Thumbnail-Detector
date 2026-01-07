@@ -1,1 +1,6 @@
-key: value
+COLUMNS:
+   headline: object
+
+
+TARGET_COLUMN:
+   clickbait: int64
