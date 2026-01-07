@@ -1,5 +1,7 @@
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Dict
+
 
 @dataclass(frozen=True)
 class DataIngestionConfig:
@@ -14,3 +16,8 @@ class DataValidationConfig:
     unzip_data: Path
     validation_status_file: Path
     all_schema: Dict
+
+@dataclass(frozen=True)
+class DataTransformationConfig:
+    root_dir:Path
+    data_dir:Path

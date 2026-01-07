@@ -1,6 +1,6 @@
 from src.mlProject.utils.common import read_yaml, create_directories
 from src.mlProject.constants import CONFIG_FILE_PATH, PARAM_FILE_PATH, SCHEMA_FILE_PATH
-from src.mlProject.entity.config_entity import DataIngestionConfig,DataValidationConfig
+from src.mlProject.entity.config_entity import DataIngestionConfig,DataValidationConfig,DataTransformationConfig
 from pathlib import Path
 
 class ConfigurationManager:
@@ -37,3 +37,12 @@ class ConfigurationManager:
             validation_status_file=Path(config.Data_Validation_Status),
             all_schema=schema,
         )
+
+    def get_data_transformation_config(self) -> DataTransformationConfig:
+        config = self.config.data_transformation
+        create_directories([Path(config.root_dir)])
+        data_transformation_config = DataTransformationConfig(
+            root_dir=config.root_dir,
+            data_dir=config.data_path,
+        )
+        return data_transformation_config
