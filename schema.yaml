@@ -3,4 +3,4 @@ COLUMNS:
 
 
 TARGET_COLUMN:
-   clickbait: int64
+   name: clickbait

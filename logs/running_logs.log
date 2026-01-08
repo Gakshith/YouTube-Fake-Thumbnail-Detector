@@ -342,3 +342,517 @@ x==========x]
 [2026-01-07 14:11:21,036: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
 
 x==========x]
+[2026-01-07 15:05:40,136: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-01-07 15:05:40,137: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 15:05:40,138: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 15:05:40,138: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 15:05:40,138: INFO: common: Created directory at: artifacts]
+[2026-01-07 15:05:40,138: INFO: common: Created directory at: artifacts/data_ingestion]
+[2026-01-07 15:05:40,886: INFO: data_ingestion: Downloaded file to: artifacts/data_ingestion/data.zip]
+[2026-01-07 15:05:40,902: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-01-07 15:05:40,902: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-01-07 15:05:40,904: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 15:05:40,904: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 15:05:40,905: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 15:05:40,905: INFO: common: Created directory at: artifacts]
+[2026-01-07 15:05:40,905: INFO: common: Created directory at: artifacts]
+[2026-01-07 15:05:40,906: INFO: common: Created directory at: artifacts/data_validation]
+[2026-01-07 15:05:40,946: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-01-07 15:05:40,946: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-01-07 15:05:40,947: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 15:05:40,948: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 15:05:40,948: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 15:05:40,948: INFO: common: Created directory at: artifacts]
+[2026-01-07 15:05:40,948: INFO: common: Created directory at: artifacts/data_transformation]
+[2026-01-07 15:05:40,974: INFO: common: Created directory at: artifacts/data_transformation]
+[2026-01-07 15:05:46,091: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-01-07 15:33:18,488: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 15:33:18,491: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 15:33:18,492: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 15:33:18,493: INFO: common: Created directory at: artifacts/model_trainer]
+[2026-01-07 15:33:49,051: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 15:33:49,053: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 15:33:49,054: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 15:33:49,054: INFO: common: Created directory at: artifacts/model_trainer]
+[2026-01-07 15:36:02,447: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 15:36:02,449: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 15:36:02,450: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 15:36:02,450: INFO: common: Created directory at: artifacts/data_transformation]
+[2026-01-07 15:36:02,481: INFO: common: Created directory at: artifacts/data_transformation]
+[2026-01-07 15:36:18,846: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 15:36:18,849: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 15:36:18,850: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 15:36:18,851: INFO: common: Created directory at: artifacts/data_transformation]
+[2026-01-07 15:36:18,881: INFO: common: Created directory at: artifacts/data_transformation]
+[2026-01-07 15:43:33,779: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-01-07 15:43:33,780: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 15:43:33,780: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 15:43:33,781: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 15:43:33,781: INFO: common: Created directory at: artifacts]
+[2026-01-07 15:43:33,781: INFO: common: Created directory at: artifacts/data_ingestion]
+[2026-01-07 15:43:34,875: INFO: data_ingestion: Downloaded file to: artifacts/data_ingestion/data.zip]
+[2026-01-07 15:43:34,888: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-01-07 15:43:34,888: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-01-07 15:43:34,891: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 15:43:34,891: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 15:43:34,892: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 15:43:34,892: INFO: common: Created directory at: artifacts]
+[2026-01-07 15:43:34,892: INFO: common: Created directory at: artifacts]
+[2026-01-07 15:43:34,892: INFO: common: Created directory at: artifacts/data_validation]
+[2026-01-07 15:43:34,930: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-01-07 15:43:34,930: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-01-07 15:43:34,931: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 15:43:34,931: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 15:43:34,932: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 15:43:34,932: INFO: common: Created directory at: artifacts]
+[2026-01-07 15:43:34,932: INFO: common: Created directory at: artifacts/data_transformation]
+[2026-01-07 15:43:34,956: INFO: common: Created directory at: artifacts/data_transformation]
+[2026-01-07 15:43:42,287: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-01-07 15:44:26,372: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 15:44:26,375: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 15:44:26,376: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 15:44:26,378: INFO: common: Created directory at: artifacts/model_trainer]
+[2026-01-07 15:45:11,995: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 15:45:11,997: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 15:45:11,997: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 15:45:11,998: INFO: common: Created directory at: artifacts/data_transformation]
+[2026-01-07 15:45:12,029: INFO: common: Created directory at: artifacts/data_transformation]
+[2026-01-07 15:45:35,045: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 15:45:35,046: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 15:45:35,048: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 15:45:35,048: INFO: common: Created directory at: artifacts/data_transformation]
+[2026-01-07 15:45:35,078: INFO: common: Created directory at: artifacts/data_transformation]
+[2026-01-07 15:46:08,663: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 15:46:08,664: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 15:46:08,665: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 15:46:08,666: INFO: common: Created directory at: artifacts/data_transformation]
+[2026-01-07 15:46:08,694: INFO: common: Created directory at: artifacts/data_transformation]
+[2026-01-07 18:32:17,199: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 18:32:17,202: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 18:32:17,203: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 18:32:17,204: INFO: common: Created directory at: artifacts/data_transformation]
+[2026-01-07 18:32:17,232: INFO: common: Created directory at: artifacts/data_transformation]
+[2026-01-07 18:35:19,768: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 18:35:19,770: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 18:35:19,772: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 18:35:19,772: INFO: common: Created directory at: artifacts/model_trainer]
+[2026-01-07 18:40:59,788: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 18:40:59,791: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 18:40:59,792: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 18:40:59,792: INFO: common: Created directory at: artifacts/model_trainer]
+[2026-01-07 18:42:29,564: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 18:42:29,566: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 18:42:29,567: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 18:42:29,567: INFO: common: Created directory at: artifacts/data_transformation]
+[2026-01-07 18:42:29,591: INFO: common: Created directory at: artifacts/data_transformation]
+[2026-01-07 18:42:42,334: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 18:42:42,335: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 18:42:42,336: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 18:42:42,337: INFO: common: Created directory at: artifacts/data_transformation]
+[2026-01-07 18:42:42,363: INFO: common: Created directory at: artifacts/data_transformation]
+[2026-01-07 18:42:56,930: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 18:42:56,932: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 18:42:56,933: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 18:42:56,934: INFO: common: Created directory at: artifacts/model_trainer]
+[2026-01-07 18:44:59,101: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 18:44:59,103: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 18:44:59,105: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 18:44:59,105: INFO: common: Created directory at: artifacts/model_trainer]
+[2026-01-07 18:48:10,079: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 18:48:10,081: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 18:48:10,082: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 18:48:10,083: INFO: common: Created directory at: artifacts/model_trainer]
+[2026-01-07 18:51:43,146: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 18:51:43,148: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 18:51:43,149: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 18:51:43,149: INFO: common: Created directory at: artifacts/data_transformation]
+[2026-01-07 18:51:43,177: INFO: common: Created directory at: artifacts/data_transformation]
+[2026-01-07 18:56:22,583: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 18:56:22,584: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 18:56:22,585: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 18:56:22,586: INFO: common: Created directory at: artifacts/model_trainer]
+[2026-01-07 21:02:51,690: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-01-07 21:02:51,691: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 21:02:51,692: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 21:02:51,692: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 21:02:51,692: INFO: common: Created directory at: artifacts]
+[2026-01-07 21:02:51,692: INFO: common: Created directory at: artifacts/data_ingestion]
+[2026-01-07 21:02:51,717: ERROR: main: <urlopen error [Errno 8] nodename nor servname provided, or not known>]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 1321, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              encode_chunked=req.has_header('Transfer-encoding'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1338, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1384, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1333, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1093, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1037, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1472, in connect
+    super().connect()
+    ~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1003, in connect
+    self.sock = self._create_connection(
+                ~~~~~~~~~~~~~~~~~~~~~~~^
+        (self.host,self.port), self.timeout, self.source_address)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 846, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 983, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gojuruakshith/YouTube-Fake-Thumbnail-Detector/main.py", line 13, in <module>
+    data_ingestion.main()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/gojuruakshith/YouTube-Fake-Thumbnail-Detector/src/mlProject/pipeline/stage_01_data_ingestion.py", line 14, in main
+    data_ingestion.download_file()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/gojuruakshith/YouTube-Fake-Thumbnail-Detector/src/mlProject/components/data_ingestion.py", line 20, in download_file
+    with request.urlopen(self.config.source_url, context=ctx) as r, open(self.config.local_data_file, "wb") as f:
+         ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 487, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 504, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 1369, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 1324, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+[2026-01-07 21:03:55,165: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-01-07 21:03:55,166: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 21:03:55,166: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 21:03:55,167: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 21:03:55,167: INFO: common: Created directory at: artifacts]
+[2026-01-07 21:03:55,167: INFO: common: Created directory at: artifacts/data_ingestion]
+[2026-01-07 21:03:55,185: ERROR: main: <urlopen error [Errno 8] nodename nor servname provided, or not known>]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 1321, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              encode_chunked=req.has_header('Transfer-encoding'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1338, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1384, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1333, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1093, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1037, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1472, in connect
+    super().connect()
+    ~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1003, in connect
+    self.sock = self._create_connection(
+                ~~~~~~~~~~~~~~~~~~~~~~~^
+        (self.host,self.port), self.timeout, self.source_address)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 846, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 983, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gojuruakshith/YouTube-Fake-Thumbnail-Detector/main.py", line 13, in <module>
+    data_ingestion.main()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/gojuruakshith/YouTube-Fake-Thumbnail-Detector/src/mlProject/pipeline/stage_01_data_ingestion.py", line 14, in main
+    data_ingestion.download_file()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/gojuruakshith/YouTube-Fake-Thumbnail-Detector/src/mlProject/components/data_ingestion.py", line 20, in download_file
+    with request.urlopen(self.config.source_url, context=ctx) as r, open(self.config.local_data_file, "wb") as f:
+         ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 487, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 504, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 1369, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 1324, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+[2026-01-07 21:05:35,230: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-01-07 21:05:35,231: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 21:05:35,231: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 21:05:35,232: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 21:05:35,232: INFO: common: Created directory at: artifacts]
+[2026-01-07 21:05:35,232: INFO: common: Created directory at: artifacts/data_ingestion]
+[2026-01-07 21:05:35,251: ERROR: main: <urlopen error [Errno 8] nodename nor servname provided, or not known>]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 1321, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              encode_chunked=req.has_header('Transfer-encoding'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1338, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1384, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1333, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1093, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1037, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1472, in connect
+    super().connect()
+    ~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1003, in connect
+    self.sock = self._create_connection(
+                ~~~~~~~~~~~~~~~~~~~~~~~^
+        (self.host,self.port), self.timeout, self.source_address)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 846, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 983, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gojuruakshith/YouTube-Fake-Thumbnail-Detector/main.py", line 13, in <module>
+    data_ingestion.main()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/gojuruakshith/YouTube-Fake-Thumbnail-Detector/src/mlProject/pipeline/stage_01_data_ingestion.py", line 14, in main
+    data_ingestion.download_file()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/gojuruakshith/YouTube-Fake-Thumbnail-Detector/src/mlProject/components/data_ingestion.py", line 20, in download_file
+    with request.urlopen(self.config.source_url, context=ctx) as r, open(self.config.local_data_file, "wb") as f:
+         ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 487, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 504, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 1369, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 1324, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+[2026-01-07 21:07:07,500: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-01-07 21:07:07,502: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 21:07:07,502: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 21:07:07,502: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 21:07:07,502: INFO: common: Created directory at: artifacts]
+[2026-01-07 21:07:07,502: INFO: common: Created directory at: artifacts/data_ingestion]
+[2026-01-07 21:07:08,223: INFO: data_ingestion: Downloaded file to: artifacts/data_ingestion/data.zip]
+[2026-01-07 21:07:08,228: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-01-07 21:07:08,228: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-01-07 21:07:08,228: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 21:07:08,228: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 21:07:08,229: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 21:07:08,229: INFO: common: Created directory at: artifacts]
+[2026-01-07 21:07:08,229: INFO: common: Created directory at: artifacts]
+[2026-01-07 21:07:08,229: INFO: common: Created directory at: artifacts/data_validation]
+[2026-01-07 21:07:08,253: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-01-07 21:07:08,254: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-01-07 21:07:08,254: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 21:07:08,254: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 21:07:08,255: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 21:07:08,255: INFO: common: Created directory at: artifacts]
+[2026-01-07 21:07:08,255: INFO: common: Created directory at: artifacts/data_transformation]
+[2026-01-07 21:07:08,274: INFO: common: Created directory at: artifacts/data_transformation]
+[2026-01-07 21:07:14,396: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-01-07 21:11:42,684: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 21:11:42,686: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 21:11:42,687: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 21:11:42,688: INFO: common: Created directory at: artifacts/model_trainer]
+[2026-01-07 21:12:09,156: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 21:12:09,157: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 21:12:09,158: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 21:12:09,158: INFO: common: Created directory at: artifacts/model_trainer]
+[2026-01-07 21:12:57,517: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 21:12:57,519: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 21:12:57,521: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 21:12:57,521: INFO: common: Created directory at: artifacts/model_trainer]
+[2026-01-07 21:14:30,716: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 21:14:30,718: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 21:14:30,719: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 21:14:30,719: INFO: common: Created directory at: artifacts/model_trainer]
+[2026-01-07 21:17:46,218: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 21:17:46,221: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 21:17:46,222: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 21:17:46,222: INFO: common: Created directory at: artifacts/model_trainer]
+[2026-01-07 21:18:58,530: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 21:18:58,533: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 21:18:58,535: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 21:18:58,535: INFO: common: Created directory at: artifacts/model_trainer]
+[2026-01-07 21:20:11,971: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-01-07 21:20:11,973: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 21:20:11,973: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 21:20:11,974: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 21:20:11,974: INFO: common: Created directory at: artifacts]
+[2026-01-07 21:20:11,974: INFO: common: Created directory at: artifacts/data_ingestion]
+[2026-01-07 21:20:12,881: INFO: data_ingestion: Downloaded file to: artifacts/data_ingestion/data.zip]
+[2026-01-07 21:20:12,895: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-01-07 21:20:12,896: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-01-07 21:20:12,898: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 21:20:12,899: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 21:20:12,899: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 21:20:12,900: INFO: common: Created directory at: artifacts]
+[2026-01-07 21:20:12,900: INFO: common: Created directory at: artifacts]
+[2026-01-07 21:20:12,900: INFO: common: Created directory at: artifacts/data_validation]
+[2026-01-07 21:20:12,938: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-01-07 21:20:12,938: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-01-07 21:20:12,939: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 21:20:12,940: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 21:20:12,940: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 21:20:12,940: INFO: common: Created directory at: artifacts]
+[2026-01-07 21:20:12,940: INFO: common: Created directory at: artifacts/data_transformation]
+[2026-01-07 21:20:12,964: INFO: common: Created directory at: artifacts/data_transformation]
+[2026-01-07 21:20:18,900: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-01-07 21:24:36,534: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 21:24:36,536: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 21:24:36,537: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 21:24:36,538: INFO: common: Created directory at: artifacts/model_trainer]
+[2026-01-07 21:25:13,327: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 21:25:13,329: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 21:25:13,330: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 21:25:13,331: INFO: common: Created directory at: artifacts/model_trainer]
+[2026-01-07 21:25:44,586: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 21:25:44,588: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 21:25:44,589: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 21:25:44,590: INFO: common: Created directory at: artifacts/model_trainer]
+[2026-01-07 21:29:06,731: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 21:29:06,733: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 21:29:06,734: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 21:29:06,735: INFO: common: Created directory at: artifacts/model_trainer]
+[2026-01-07 21:29:50,960: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 21:29:50,963: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 21:29:50,964: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 21:29:50,964: INFO: common: Created directory at: artifacts/model_trainer]
+[2026-01-07 21:30:44,167: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 21:30:44,170: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 21:30:44,171: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 21:30:44,171: INFO: common: Created directory at: artifacts/model_trainer]
+[2026-01-07 21:31:41,842: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 21:31:41,844: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 21:31:41,845: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 21:31:41,846: INFO: common: Created directory at: artifacts/model_trainer]
+[2026-01-07 21:45:11,006: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-01-07 21:45:11,008: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 21:45:11,008: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 21:45:11,009: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 21:45:11,009: INFO: common: Created directory at: artifacts]
+[2026-01-07 21:45:11,009: INFO: common: Created directory at: artifacts/data_ingestion]
+[2026-01-07 21:45:11,669: INFO: data_ingestion: Downloaded file to: artifacts/data_ingestion/data.zip]
+[2026-01-07 21:45:11,682: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-01-07 21:45:11,682: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-01-07 21:45:11,684: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 21:45:11,684: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 21:45:11,685: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 21:45:11,685: INFO: common: Created directory at: artifacts]
+[2026-01-07 21:45:11,685: INFO: common: Created directory at: artifacts]
+[2026-01-07 21:45:11,685: INFO: common: Created directory at: artifacts/data_validation]
+[2026-01-07 21:45:11,720: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-01-07 21:45:11,720: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-01-07 21:45:11,721: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 21:45:11,721: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 21:45:11,721: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 21:45:11,722: INFO: common: Created directory at: artifacts]
+[2026-01-07 21:45:11,722: INFO: common: Created directory at: artifacts/data_transformation]
+[2026-01-07 21:45:11,746: INFO: common: Created directory at: artifacts/data_transformation]
+[2026-01-07 21:45:16,357: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-01-07 21:45:16,357: INFO: main: >>>>>> stage Model Training Stage started <<<<<<]
+[2026-01-07 21:45:16,358: INFO: common: YAML file loaded successfully: config/config.yaml]
+[2026-01-07 21:45:16,358: INFO: common: YAML file loaded successfully: params.yaml]
+[2026-01-07 21:45:16,358: INFO: common: YAML file loaded successfully: schema.yaml]
+[2026-01-07 21:45:16,358: INFO: common: Created directory at: artifacts]
+[2026-01-07 21:45:16,358: INFO: common: Created directory at: artifacts/model_trainer]
+[2026-01-07 21:45:25,111: INFO: main: >>>>>> stage Model Training Stage completed <<<<<<
+
+x==========x]

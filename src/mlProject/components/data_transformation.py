@@ -102,8 +102,8 @@ class DataTransformation:
             X, y, test_size=0.2, random_state=42
         )
 
-        train_df = pd.DataFrame({"headline": X_train, "class": y_train})
-        test_df = pd.DataFrame({"headline": X_test, "class": y_test})
+        train_df = pd.DataFrame({"headline": X_train, "clickbait": y_train})
+        test_df = pd.DataFrame({"headline": X_test, "clickbait": y_test})
 
         train_df.to_csv(os.path.join(self.config.root_dir, "train.csv"), index=False)
         test_df.to_csv(os.path.join(self.config.root_dir, "test.csv"), index=False)

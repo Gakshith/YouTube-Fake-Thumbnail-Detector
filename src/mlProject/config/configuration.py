@@ -1,6 +1,6 @@
 from src.mlProject.utils.common import read_yaml, create_directories
 from src.mlProject.constants import CONFIG_FILE_PATH, PARAM_FILE_PATH, SCHEMA_FILE_PATH
-from src.mlProject.entity.config_entity import DataIngestionConfig,DataValidationConfig,DataTransformationConfig
+from src.mlProject.entity.config_entity import DataIngestionConfig, DataValidationConfig, DataTransformationConfig,ModelTrainerConfig
 from pathlib import Path
 
 class ConfigurationManager:
@@ -46,3 +46,20 @@ class ConfigurationManager:
             data_dir=config.data_path,
         )
         return data_transformation_config
+
+    def get_model_trainer_config(self) -> ModelTrainerConfig:
+        config = self.config.model_trainer
+        params = self.params.LogisticRegression
+        schema = self.schema.TARGET_COLUMN
+
+        create_directories([config.root_dir])
+
+        model_trainer_config = ModelTrainerConfig(
+            root_dir=config.root_dir,
+            train_data_path=config.train_data_path,
+            test_data_path=config.test_data_path,
+            model_name=config.model_name,
+            l1_ratio=params.l1_ratio,
+            target_column=schema.name
+        )
+        return model_trainer_config
